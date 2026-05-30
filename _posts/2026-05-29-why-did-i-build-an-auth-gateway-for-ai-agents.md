@@ -46,7 +46,7 @@ Different current attempts fail at one or more of these:
 + Auto mode for Claude Code helps 90% of the time, and provides non-blocking by directly refusing approvals sometimes(sometimes leaving the agent unable to complete its task). It is "Around the Agent" but still based on LLM, ie. not infinitely reliable.
 + OpenClaw directly doesn't bother. Critically the Agent can access the secrets needed to perform on most normal setups. And will get them into its context(if not intermediately it will eventually)
 + IETF, OAuth, and others are coming with an avalanche of specification drafts: I've read some of them, skimmed others. While there is value in there I don't think half of the stuff will be needed.
-+ Still others offer cl
++ Still others offer closed, proprietary solutions.
 
 ## My attempt at solving this
 
@@ -96,7 +96,7 @@ paths:
     get:
       # ...
     patch:
-	  # ...
+      # ...
     delete:
       operationId: delete_event
       summary: "Delete event {eventId} on calendar {calendarId}"
