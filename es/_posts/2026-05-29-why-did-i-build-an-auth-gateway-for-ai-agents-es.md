@@ -81,7 +81,7 @@ components:
       x-overslash-provider: google
       # ...
 paths:
-  /calendar/v3/calendars/{calendarId}/events/{eventId}: 
+  /calendar/v3/calendars/{calendarId}/events/{eventId}:
     parameters:
       # ...
       - name: eventId

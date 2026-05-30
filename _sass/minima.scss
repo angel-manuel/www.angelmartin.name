@@ -54,3 +54,11 @@ $on-large: $on-laptop !default;
 @import "minima/base", "minima/layout", "minima/syntax-highlighting";
 
 @import "custom/lang";
+
+// Rouge mis-lexes some valid tokens (e.g. OpenAPI path-template keys like
+// `/path/{id}:`) as errors and boxes them in pink. Render those as normal
+// code instead of flagging them.
+.highlight .err {
+  color: inherit;
+  background-color: transparent;
+}
